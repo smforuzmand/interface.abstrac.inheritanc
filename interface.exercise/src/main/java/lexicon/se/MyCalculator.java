@@ -35,10 +35,9 @@ public abstract interface MyCalculator {
 
     public abstract double division(double number1, double number2);
 
-    default double calculator(double num1, double num2) {
+    default double calculator(double num1, double num2, String operator) {
         double result = 0;
 
-        String operator = null;
         switch (operator) {
             case summationSign:
                 result = summation(num1, num2);
